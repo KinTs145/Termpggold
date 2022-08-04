@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="summativeTwo.js"></script>
+    
+    <title>Climate change</title>
+</head>
+<!-- body start separate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+<body  onload="main()">
+    <nav>
+        <ul class="flex-nav">
+            <p class="menu"><a>Menu</a></p>
+            <li><a href="#top">Causes</a></li>
+            <li><a href="#consequences">Consequences</a></li>
+            <li><a href="#dat">Data</a></li>
+            <li><a href="#tail">What about more?</a></li>
+            <li><a href="#top0">Home</a></li>
+        </ul>
+    </nav>
+    <!-- nav bar separate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="container-slide" id="top0">
+        <div class="content fade" >
+          <img src="meltice2.jfif" style="width:100% ; opacity: 0.7; height:800px;">
+          <div class="text">
+              <h5>Climate changes influences our daily life.</h5>  
+              <p>Before the 18th century, in the age of industrial people began to burn coal, oil and gas, which originally contain 280 parts per million of carbon dioxide. </p>
+            </div>
+        </div>
+        
+        <div class="content fade">
+          <img src="pollution.jpg" style="width:100%; height: auto; opacity: 0.7; height:800px; object-fit: cover;">
+          <div class="textSec">
+              <h5><strong> Green house gases</strong></h5>
+                <ul>
+                    <li>carbon dioxide</li>
+                    <li>methane</li>
+                    <li>nitrous dioxide</li>
+                    <li>fluorinated gases</li>
+                </ul>
+                <p>To see what matters our health, <a href=https://en.wikipedia.org/wiki/Greenhouse_gas>see here</a></p> 
+            </div>
+        </div>
+        
+        <div class="content fade">
+            <img src="dessert.png" style="width:100%; height: auto; opacity: 0.7; height:800px; object-fit: cover;">
+            <div class="text">
+                <h6>To see the trend of temperature rises, <a href="#dat">click here</a></h6>
+            </div>
+        </div>
+        <a class="left" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="right" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- slideshow separate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+    <div class ="txt">
+        
+        <h2 id="top">What is affecting climate change?</h2>
+        <p><img class ="photo" src="factory.png" alt="factory.png" style="width:400px;height:300px; object-fit: cover;"> While we burning coals, oil and gases, 
+            we are changing the climate due to cutting trees and emit green houses gas.</p>
+        <p>Because of the huge amount of gases stored in the atmosphere, causing global warming.</p>
+        <br>
+        <br>
+            <h2>Causes of rising emissions</h2>
+                <ul>
+                <li>Because of burning a huge amount of coal, oil and gases which produce carbon dioxide and nitro dioxide</li>
+                <li>Cutting down too much trees, as known as deforestation. Trees can do photosynthises to transfer carbon dioxide into oxygen. </li>
+                <li id ="consequences">Development of farmlands also bringing destruction to the environment. Cows and sheeps create a lot of methane when they fart.</li>
+                </ul> 
+    </div>
+    <br>
+    <br>
+    
+    <!-- Iseparate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="background">
+        <br>
+        <h2 style="margin-left: 20%; margin-right: 20%;">The consequences of climate change</h2>
+        <p style="margin-left: 20%; margin-right: 20%;">The current heating days reaches its peak in January to March in 2021 then slope down from 10.3 to 8.9 in the same period of months in 2022. </p>
+        <p id="dat" style="margin-left: 20%; margin-right: 20%;" >Climate changes rapidly from few years ago. Drought poison farmlands and rivers, flooding spreads disease and damges to ecosystems and 
+            architecture.<strong>To see more you can hover the bars in the chart to see the details information!</strong>  </p>
+    <!-- data -->
+        <div id="data" class="hide">
+            <p><strong>The temperature in this period is</strong></p>
+            <p><span id="value">100</span></p>
+        </div>
+        <svg onload="main()" width=1000 height=700></svg>
+   
+        <p style="color: rgb(63, 177, 101); font-style: italic; font-size:20px; text-align: center;">Source from GOV.UK: <a href ="https://www.ons.gov.uk/economy/environmentalaccounts/articles/climatechangeinsightsuk/may2022">here</a></p>
+     </div>
+    <!-- data -->
+    
+    <!-- Iseparate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <script src="summative.js"></script>
+    <div class="backgroundSec">
+    <div class ="txt">
+        <h2 id="tail">What can we do more?</h2>
+        <ul>
+            <li>Start use energy wisely. Not only become more energy-efficent, you can save money too!</li>
+            <li class="bot">Ride bike for bike lanes in your community, also helps make you healither and happier.</li>
+        </ul>
+    </div>
+    </div>
+   
+
+
+
+</body>
+</html>
